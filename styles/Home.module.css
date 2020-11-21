@@ -1,5 +1,5 @@
 .container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
@@ -52,20 +52,30 @@
   font-size: 4rem;
 }
 
+.subtitle {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2rem;
+}
+
 .title,
-.description {
+.description,
+.subtitle {
   text-align: center;
 }
 
 .description {
+  margin-top: 0.75rem;
   line-height: 1.5;
   font-size: 1.5rem;
 }
 
 .code {
-  background: #fafafa;
+  background: #202020;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  color: white;
   border-radius: 5px;
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
@@ -119,4 +129,11 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.formSignin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
 }
